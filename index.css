@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fondo/wallhaven-4vl325_1280x720.png);
+
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+#formulario {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#tareaInput {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+}
+#agregarTarea {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#agregarTarea:hover {
+    background-color: #218838;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: white;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.eliminar, .check {
+    background: rgb(104, 67, 190);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.eliminar:hover, .check:hover {
+    background: #948db9;
+}
+.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+#contadores {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #formulario {
+        flex-direction: column;
+    }
+    #tareaInput, #agregarTarea {
+        width: 90%;
+    }
+    ul {
+        width: 90%;
+    }
+}
